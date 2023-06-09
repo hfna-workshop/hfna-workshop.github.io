@@ -788,6 +788,78 @@ list-style-type: none;
 }
 
 
+
+/*--------------------*/
+/* SPEAKERS */
+/*--------------------*/
+
+
+#mu-speakers {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-speakers-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-speakers-content{
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.mu-single-speaker {
+	padding: 0 10px;
+	outline: none;
+	text-align: center;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+
+
+.mu-single-speaker-info {
+	display: inline;
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.mu-single-speaker-info h3 {
+	margin-bottom: 4px;
+	font-size: 22px;
+}
+
+.mu-single-speaker-info p {
+	margin-bottom: 5px;
+}
+
+.mu-single-speaker-social {
+
+}
+
+.mu-single-speaker-social li {
+	display: inline-block;
+}
+
+.mu-single-speaker-social li a {
+	display: inline-block;
+	margin-right: 5px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+
+
 /*--------------------*/
 /* VENUE */
 /*--------------------*/
@@ -1490,6 +1562,9 @@ list-style-type: none;
 		font-size: 18px;
 	}
 
+
+	
+
 	.mu-pricing-conten {
 		padding: 0 5%;
 	}
@@ -1498,6 +1573,7 @@ list-style-type: none;
 		margin-bottom: 30px;
 	}
 
+	
 
 		
 }
@@ -1771,3 +1847,44 @@ list-style-type: none;
 	
 }
 
+
+
+
+.video-container {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
+	scroll-behavior: smooth;
+}
+
+.video-wrapper {
+	flex: 0 0 25%;
+	scroll-snap-align: center;
+	position: relative;
+}
+
+.video-wrapper video {
+	width: 100%;
+	height: auto;
+}
+
+
+
+.video-container {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
+	scroll-behavior: smooth;
+}
+
+.video-wrapper {
+	flex: 0 0 25%;
+	scroll-snap-align: center;
+	position: relative;
+}
+
+.video-wrapper video {
+	width: 100%;
+}
