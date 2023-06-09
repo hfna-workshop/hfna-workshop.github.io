@@ -63,7 +63,7 @@
  <!--<li><img src="assets/images/logo_.png" width=90 style="margin:0px 0px;padding:0px 0px"></li>-->
 				        <li><a href="#mu-about">Overview</a></li>
 				        <li><a href="#mu-schedule">Schedule</a></li>
-
+						<li><a href="#mu-speakers">Speakers</a></li>
 			            <li><a href="#mu-faq">FAQ</a></li>
 			            <li><a href="#mu-organizers">Organizers</a></li>
 
@@ -109,11 +109,11 @@
 	<!-- End Header -->
 
 
-<!-- 	<div class="container">
+	<div class="container">
 				<div class="row">
 					<img src="assets/images/teaser2.jpg" alt="HTML5 Icon" width="1062" height="540">
 				</div>
-			</div> -->
+			</div>
 
 
 	<!-- Start main content -->
@@ -127,16 +127,70 @@
 							<!-- Start Feature Content -->
 							<div class="row">
 
-
+							
 
 										<h2>Overview</h2>
 
 
 <p>Reconstruction and animation of clothed humans is a research area of increasing academic and industrial interest. This is due to the plethora of applications, such as augmented and virtual reality, that facilitate telepresence in the metaverse. However, representing the spatio-temporal surface dynamics in clothed humans poses a significant challenge, that usually requires manual intervention (e.g., 3D artists) or computationally expensive physics simulations. Thus, synthesising photo-realistic, controllable avatars remains an open problem.
-	To this end, we propose to host a workshop on the subject of high fidelity neural actors, that will bring together experts in the field of neural rendering and digital humans, with the aim to discuss and facilitate progress in the field.</p>
+	To this end, we are hosting a workshop on the subject of high fidelity neural actors, that will bring together experts in the field of neural rendering and digital humans, with the aim to discuss and facilitate progress in the field.</p>
 
 
 							</div>
+
+
+						
+					
+					
+					<button onclick="scrollCarousel(-1)">Previous</button>
+					<button onclick="scrollCarousel(1)">Next</button>
+					
+					<div class="video-container" id="videoContainer">
+						<div class="video-wrapper">
+							<video src="assets/images/A1S1_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A2S2_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A3S1_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A4S2_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A5S1_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A6S2_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A7S1_trimmed.mp4" controls></video>
+						</div>
+						<div class="video-wrapper">
+							<video src="assets/images/A8S2_trimmed.mp4" controls></video>
+						</div>
+					</div>
+				
+					<script>
+						let scrollPos = 0;
+				
+						function scrollCarousel(n) {
+							const container = document.getElementById('videoContainer');
+				
+							container.scrollLeft += n * container.offsetWidth;
+							
+							// Update scroll position
+							scrollPos += n;
+							
+							// Prevent looping around
+							if (scrollPos < 0) {
+								scrollPos = 0;
+							} else if (scrollPos > 1) {
+								scrollPos = 1;
+							}
+						}
+					</script>
 							<!-- End Feature Content -->
 
 						</div>
@@ -146,12 +200,12 @@
 		</section>
 		<!-- End About -->
 
+			
+				
 
 
 
-
-
-	<!-- Start Schedule  -->
+		<!-- Start Schedule  -->
 		<style>
 			.left-align{
 				text-align: left;
@@ -195,6 +249,86 @@
 
 
 
+<!-- Start speaker -->
+<section id="mu-speakers">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="mu-speakers-area">
+
+					<div class="mu-title-area">
+						<h2 class="mu-title">Invited Speakers</h2>
+
+					</div>
+
+					<!-- Start speaker Content -->
+
+					<div class="mu-speakers-content">
+					<div class="mu-organizers-slider">
+
+							<!-- Start single speaker -->
+							<div class="mu-single-organizer">
+								<a href=""><center><img src="assets/images/schwarz.png" alt="organizer img"  height="200px"></center></a>
+								<div class="mu-single-organizer-info">
+									<h3>Katja Schwarz</h3>
+									<p>University of Tübingen/MPI</p>
+								</div>
+							</div>
+							<!-- End single speaker -->
+
+
+							<!-- Start single speaker -->
+							<div class="mu-single-organizer">
+								<a href=""><center><img src="assets/images/casas.jpg" alt="organizer img"  height="200px"></center></a>
+								<div class="mu-single-organizer-info">
+									<h3>Dan Casas</h3>
+									<p>Universidad Rey Juan Carlos</p>
+								</div>
+							</div>
+							<!-- End single speaker -->
+
+
+							<!-- Start single speaker -->
+							<div class="mu-single-organizer">
+								<a href=""><center><img src="assets/images/saito.jpg" alt="organizer img"  height="200px"></center></a>
+								<div class="mu-single-organizer-info">
+									<h3>Shunsuke Saiot</h3>
+									<p>Meta Reality Labs</p>
+								</div>
+							</div>
+							<!-- End single speaker -->
+
+
+							<!-- Start single speaker -->
+							<div class="mu-single-organizer">
+								<a href=""><center><img src="assets/images/ponsmoll.jpeg" alt="organizer img"  height="200px"></center></a>
+								<div class="mu-single-organizer-info">
+									<h3>Gerard Pons-Moll</h3>
+									<p>University of Tübingen/MPI</p>
+								</div>
+							</div>
+
+							<!-- End single speaker -->
+
+
+
+							
+
+						</div>
+					</div>
+
+					<!-- End Invited Speakers content-->
+				</div>
+			</div>
+		
+		
+
+		
+		</div>
+	</div>
+</section>
+<!-- End speakers -->
+
 
 
 
@@ -227,10 +361,24 @@
 							          </div>
 							          <div id="collapseFour" class="panel-collapse collapse">
 							            <div class="panel-body">
-							              Please reach out at actorshq.workshop [at] gmail [dot] com. </div>
+							              Please reach out at hfna.workshop [at] gmail [dot] com. </div>
 							          </div>
 							        </div>
-
+								</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+										  <h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour1">
+											  <span class="fa fa-angle-up"></span>Where can I find the ActorsHQ dataset?
+											</a>
+										  </h4>
+										</div>
+										<div id="collapseFour1" class="panel-collapse collapse">
+										  <div class="panel-body">
+											Please visit https://www.actors-hq.com </div>
+										</div>
+									  </div>
+									</div>
 
 
 							    </div>
@@ -242,8 +390,6 @@
 			</div>
 		</section>
 		<!-- End FAQ -->
-
-
 
 
 
@@ -272,7 +418,7 @@
 
 									<!-- Start single organizer -->
 									<div class="mu-single-organizer">
-										<center>
+										<a href=""><center><img src="assets/images/markos.JPG" alt="organizer img"  height="200px"></center></a>
 										<div class="mu-single-organizer-info">
 											<h3>Markos Georgopoulos</h3>
 											<p>Synthesia</p>
@@ -283,7 +429,7 @@
 
 									<!-- Start single organizer -->
 									<div class="mu-single-organizer">
-										<center>
+										<a href=""><center><img src="assets/images/martin.jpeg" alt="organizer img"  height="200px"></center></a>
 										<div class="mu-single-organizer-info">
 											<h3>Martin Rünz</h3>
 											<p>Synthesia</p>
@@ -294,7 +440,7 @@
 
 									<!-- Start single organizer -->
 									<div class="mu-single-organizer">
-										<center>
+										<a href=""><center><img src="assets/images/jon.jpeg" alt="organizer img"  height="200px"></center></a>
 										<div class="mu-single-organizer-info">
 											<h3>Jonathan Starck</h3>
 											<p>Synthesia</p>
@@ -305,7 +451,7 @@
 
 									<!-- Start single organizer -->
 									<div class="mu-single-organizer">
-										<center>
+										<a href=""><center><img src="assets/images/lourdes.jpeg" alt="organizer img"  height="200px"></center></a>
 										<div class="mu-single-organizer-info">
 											<h3>Lourdes Agapito</h3>
 											<p>University College London</p>
@@ -317,7 +463,7 @@
 
 									<!-- Start single organizer -->
 									<div class="mu-single-organizer">
-										<center>
+										<a href=""><center><img src="assets/images/matthias.jpeg" alt="organizer img"  height="200px"></center></a>
 										<div class="mu-single-organizer-info">
 											<h3>Matthias Nießner</h3>
 											<p>Technical University Munich</p>
@@ -362,7 +508,7 @@
 			<div class="container">
 				<div class="mu-footer-area">
 					<div class="mu-footer-bottom">
-						<p>Please fell free to contact <a href="actorshq.workshop@gmail.com">us</a> for any inquiries. </p>
+						<p>Please fell free to contact <a href="hfna.workshop@gmail.com">us</a> for any inquiries. </p>
 						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
 					</div>
 				</div>
