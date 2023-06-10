@@ -139,58 +139,8 @@
 							</div>
 
 
-						
-					
-					
-					<button onclick="scrollCarousel(-1)">Previous</button>
-					<button onclick="scrollCarousel(1)">Next</button>
-					
-					<div class="video-container" id="videoContainer">
-						<div class="video-wrapper">
-							<video src="images/A1S1_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A2S2_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A3S1_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A4S2_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A5S1_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A6S2_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A7S1_trimmed.mp4" controls></video>
-						</div>
-						<div class="video-wrapper">
-							<video src="images/A8S2_trimmed.mp4" controls></video>
-						</div>
-					</div>
 				
-					<script>
-						let scrollPos = 0;
-				
-						function scrollCarousel(n) {
-							const container = document.getElementById('videoContainer');
-				
-							container.scrollLeft += n * container.offsetWidth;
-							
-							// Update scroll position
-							scrollPos += n;
-							
-							// Prevent looping around
-							if (scrollPos < 0) {
-								scrollPos = 0;
-							} else if (scrollPos > 1) {
-								scrollPos = 1;
-							}
-						}
-					</script>
+
 							<!-- End Feature Content -->
 
 						</div>
