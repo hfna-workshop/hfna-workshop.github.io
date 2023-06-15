@@ -774,10 +774,12 @@ list-style-type: none;
 .mu-single-organizer-info h3 {
 	margin-bottom: 4px;
 	font-size: 22px;
+	word-wrap: break-word;
 }
 
 .mu-single-organizer-info p {
 	margin-bottom: 5px;
+	word-wrap: break-word;
 }
 
 .mu-single-organizer-social {
@@ -1578,6 +1580,7 @@ list-style-type: none;
 
 	.mu-single-organizer-info h3 {
 		font-size: 18px;
+		word-wrap: break-word;
 	}
 
 
@@ -1627,6 +1630,9 @@ list-style-type: none;
 		width: 40px;
 	}
 
+	.mu-single-organizer-info h3, .mu-single-organizer-info p{
+		font-size: 12px;
+	}
 		
 		
 }
